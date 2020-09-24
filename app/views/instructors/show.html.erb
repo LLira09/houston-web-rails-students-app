@@ -1,0 +1,5 @@
+<h1>Instructor Details</h1>
+<p><%= @instructor.name %></p>
+
+<p><%= link_to 'Edit', edit_instructor_path(@instructor)%></p>
+<p><%= link_to 'Delete', instructor_path(@instructor), method: :delete, data: { confirm: "Are you sure?"} %></p>
